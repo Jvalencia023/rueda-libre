@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda Libre | Ciclismo Urbano</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold flex items-center gap-2">
+                <span><img src="img/logo.jpg" alt="Logo" class="inline-block h-8 w-8 object-cover rounded-full align-middle mr-1" /></span> Rueda<span class="text-emerald-400">Libre</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="index.html" class="text-emerald-400 font-semibold">Inicio</a>
+                <a href="paginas/tarifas.html" class="hover:text-emerald-400 transition">Tarifas y Recorridos</a>
+                <a href="paginas/reservas.html" class="hover:text-emerald-400 transition">Reservas</a>
+                <a href="nocturna/index.html" class="hover:text-emerald-400 transition">Ruta Nocturna</a>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
+        
+        <div class="bg-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-xl mb-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <span class="inline-block bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">Movilidad Sostenible</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">Transforma tu forma de moverte por la ciudad</h1>
+                <p class="text-slate-300 mb-6 text-base md:text-lg">Descubre nuestra flota expandida en cuadrícula, circuitos guiados y una comunidad comprometida con el ciclismo urbano seguro y eficiente.</p>
+                <a href="paginas/reservas.html" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-3 rounded-full transition shadow-lg">Reservar Ahora</a>
+            </div>
+            <div>
+                <img src="img/portada.jpg" alt="Ciclismo urbano profesional" class="rounded-2xl shadow-lg w-full h-72 object-cover">
+            </div>
+        </div>
+
+        
+        <section class="mb-12">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-3xl font-bold text-slate-900 mb-2">Nuestra Flota en Cuadrícula (Grid)</h2>
+                <p class="text-slate-600">Modelos disponibles adaptados para cada necesidad y tipo de ciclista.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md mb-3">Urbana</span>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Urbana Clásica</h4>
+                        <p class="text-slate-600 text-sm mb-6">Cómoda y liviana para las ciclorrutas.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                        <span class="text-lg font-bold text-slate-900">$10.000 <span class="text-xs font-normal text-slate-500">/ hora</span></span>
+                        <a href="paginas/reservas.html" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition">Reservar</a>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md mb-3">Urbana</span>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Urbana Plegable</h4>
+                        <p class="text-slate-600 text-sm mb-6">Se dobla en segundos; ideal para combinar con el metro.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                        <span class="text-lg font-bold text-slate-900">$12.000 <span class="text-xs font-normal text-slate-500">/ hora</span></span>
+                        <a href="paginas/reservas.html" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition">Reservar</a>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-2xl p-6 shadow-md border-2 border-emerald-500 flex flex-col justify-between relative overflow-hidden">
+                    <span class="absolute top-0 right-0 bg-emerald-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-bl-xl">Popular</span>
+                    <div>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md mb-3">Montaña</span>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Montaña Trail</h4>
+                        <p class="text-slate-600 text-sm mb-6">Suspensión delantera y 21 cambios para las subidas.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                        <span class="text-lg font-bold text-slate-900">$15.000 <span class="text-xs font-normal text-slate-500">/ hora</span></span>
+                        <a href="paginas/reservas.html" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 text-sm font-bold px-4 py-2 rounded-full transition">Reservar</a>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md mb-3">Aventura</span>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Gravel Aventura</h4>
+                        <p class="text-slate-600 text-sm mb-6">Para rutas mixtas de asfalto y destapado.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                        <span class="text-lg font-bold text-slate-900">$18.000 <span class="text-xs font-normal text-slate-500">/ hora</span></span>
+                        <a href="paginas/reservas.html" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition">Reservar</a>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md mb-3">Eléctrica</span>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Eléctrica Urbana</h4>
+                        <p class="text-slate-600 text-sm mb-6">Asistencia eléctrica con 45 km de autonomía.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                        <span class="text-lg font-bold text-slate-900">$25.000 <span class="text-xs font-normal text-slate-500">/ hora</span></span>
+                        <a href="paginas/reservas.html" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition">Reservar</a>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-md mb-3">Familiar</span>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Infantil</h4>
+                        <p class="text-slate-600 text-sm mb-6">Para niños de 6 a 10 años.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                        <span class="text-lg font-bold text-slate-900">$8.000 <span class="text-xs font-normal text-slate-500">/ hora</span></span>
+                        <a href="paginas/reservas.html" class="bg-slate-900 hover:bg-emerald-600 text-white text-sm font-semibold px-4 py-2 rounded-full transition">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-auto text-center text-sm shadow-inner">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Rueda Libre. Todos los derechos reservados. Desarrollado con Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>

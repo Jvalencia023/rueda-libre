@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Nocturna - Rueda Libre</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-xl font-bold flex items-center gap-2">
+                <span><img src="../img/logo.jpg" alt="" class="inline-block h-8 w-8 object-cover rounded-full align-middle mr-1" /></span> Rueda<span class="text-emerald-400">Libre</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="../index.html" class="hover:text-emerald-400 transition">Inicio</a>
+                <a href="../paginas/tarifas.html" class="hover:text-emerald-400 transition">Tarifas y Recorridos</a>
+                <a href="../paginas/reservas.html" class="hover:text-emerald-400 transition">Reservas</a>
+                <a href="../nocturna/index.html" class="text-emerald-400 font-semibold">Ruta Nocturna</a>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
+        <section class="mb-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" aria-labelledby="rutas-titulo">
+            <p class="mb-2 text-sm font-bold uppercase tracking-wide text-emerald-700">Todos los jueves · 8:00 p. m.</p>
+            <h1 id="rutas-titulo" class="mb-3 text-3xl font-bold text-slate-900">Rutas nocturnas</h1>
+            <p class="max-w-3xl text-slate-600">Explora la ciudad bajo las luces de la noche. Todas las rutas salen de la sede de Rueda Libre e incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+        </section>
+
+        <section aria-labelledby="rutas-listado-titulo">
+            <h2 id="rutas-listado-titulo" class="sr-only">Rutas disponibles</h2>
+            <div class="space-y-6">
+                <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-200 hover:border-emerald-700 hover:shadow-lg">
+                    <img src="../img/portada.jpg" alt="Ciclista recorriendo una ruta urbana" class="h-56 w-full object-cover">
+                    <div class="p-6 sm:p-8">
+                        <span class="mb-3 inline-flex rounded-full bg-emerald-100 px-3 py-1 text-sm font-bold text-emerald-900">Nivel: Fácil</span>
+                        <h3 class="mb-5 text-2xl font-bold text-slate-900">Luces del Centro</h3>
+                        <dl class="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                            <div>
+                                <dt class="text-sm text-slate-600">Distancia</dt>
+                                <dd class="font-semibold text-slate-900">10 km</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm text-slate-600">Duración</dt>
+                                <dd class="font-semibold text-slate-900">2 h</dd>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <dt class="text-sm text-slate-600">Punto de encuentro</dt>
+                                <dd class="font-semibold text-slate-900">Sede de Rueda Libre</dd>
+                            </div>
+                        </dl>
+                        <p class="mb-5 text-2xl font-bold text-slate-900">$55.000 <span class="text-sm font-normal text-slate-600">por persona</span></p>
+                        <a href="../paginas/reservas.html" class="inline-flex min-h-11 items-center justify-center rounded-2xl border-2 border-emerald-700 bg-emerald-700 px-5 py-2 font-semibold text-white transition hover:border-emerald-800 hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">
+                            Reservar una rodada
+                        </a>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-200 hover:border-amber-600 hover:shadow-lg">
+                    <img src="../img/portada.jpg" alt="Ciclista recorriendo una ruta urbana" class="h-56 w-full object-cover">
+                    <div class="p-6 sm:p-8">
+                        <span class="mb-3 inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-900">Nivel: Medio</span>
+                        <h3 class="mb-5 text-2xl font-bold text-slate-900">Miradores de la Ciudad</h3>
+                        <dl class="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                            <div>
+                                <dt class="text-sm text-slate-600">Distancia</dt>
+                                <dd class="font-semibold text-slate-900">16 km</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm text-slate-600">Duración</dt>
+                                <dd class="font-semibold text-slate-900">3 h</dd>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <dt class="text-sm text-slate-600">Punto de encuentro</dt>
+                                <dd class="font-semibold text-slate-900">Sede de Rueda Libre</dd>
+                            </div>
+                        </dl>
+                        <p class="mb-5 text-2xl font-bold text-slate-900">$75.000 <span class="text-sm font-normal text-slate-600">por persona</span></p>
+                        <a href="../paginas/reservas.html" class="inline-flex min-h-11 items-center justify-center rounded-2xl border-2 border-emerald-700 bg-emerald-700 px-5 py-2 font-semibold text-white transition hover:border-emerald-800 hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">
+                            Reservar una rodada
+                        </a>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-200 hover:border-rose-700 hover:shadow-lg">
+                    <img src="../img/portada.jpg" alt="Ciclista recorriendo una ruta urbana" class="h-56 w-full object-cover">
+                    <div class="p-6 sm:p-8">
+                        <span class="mb-3 inline-flex rounded-full bg-rose-100 px-3 py-1 text-sm font-bold text-rose-900">Nivel: Difícil</span>
+                        <h3 class="mb-5 text-2xl font-bold text-slate-900">Luna en Las Palmas</h3>
+                        <dl class="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                            <div>
+                                <dt class="text-sm text-slate-600">Distancia</dt>
+                                <dd class="font-semibold text-slate-900">22 km</dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm text-slate-600">Duración</dt>
+                                <dd class="font-semibold text-slate-900">3,5 h</dd>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <dt class="text-sm text-slate-600">Punto de encuentro</dt>
+                                <dd class="font-semibold text-slate-900">Sede de Rueda Libre</dd>
+                            </div>
+                        </dl>
+                        <p class="mb-5 text-2xl font-bold text-slate-900">$95.000 <span class="text-sm font-normal text-slate-600">por persona</span></p>
+                        <a href="../paginas/reservas.html" class="inline-flex min-h-11 items-center justify-center rounded-2xl border-2 border-emerald-700 bg-emerald-700 px-5 py-2 font-semibold text-white transition hover:border-emerald-800 hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700">
+                            Reservar una rodada
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-auto text-center text-sm shadow-inner">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Rueda Libre. Todos los derechos reservados. Desarrollado con Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>

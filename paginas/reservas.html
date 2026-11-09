@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Rueda Libre</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-xl font-bold flex items-center gap-2">
+                <span><img src="../img/logo.jpg" alt="Logo" class="inline-block h-8 w-8 object-cover rounded-full align-middle mr-1" /></span> Rueda<span class="text-emerald-400">Libre</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="../index.html" class="hover:text-emerald-400 transition">Inicio</a>
+                <a href="../paginas/tarifas.html" class="hover:text-emerald-400 transition">Tarifas y Recorridos</a>
+                <a href="../paginas/reservas.html" class="text-emerald-400 font-semibold">Reservas</a>
+                <a href="../nocturna/index.html" class="hover:text-emerald-400 transition">Ruta Nocturna</a>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-3xl mx-auto px-4 py-8 flex-grow w-full">
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Aparta tu Bicicleta - Reglas de Negocio</h2>
+            <p class="text-slate-600 mb-6">Por favor completa el formulario teniendo en cuenta los requerimientos del servicio:</p>
+            
+            <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-2xl mb-6 text-sm">
+                <ul class="list-disc list-inside space-y-1">
+                    <li><strong>Nombre completo:</strong> Obligatorio, mínimo 3 caracteres.</li>
+                    <li><strong>Documento:</strong> Obligatorio, solo números, entre 6 y 10 dígitos.</li>
+                    <li><strong>Correo:</strong> Obligatorio, formato de correo válido.</li>
+                    <li><strong>Celular:</strong> Obligatorio, 10 dígitos y debe empezar por 3.</li>
+                    <li><strong>Fecha del alquiler:</strong> Obligatoria, entre el 1 de noviembre y el 31 de diciembre de 2026.</li>
+                    <li><strong>Tipo de bicicleta y plan:</strong> Obligatorios.</li>
+                    <li><strong>Cantidad de bicicletas:</strong> Obligatoria, entre 1 y 6.</li>
+                    <li><strong>Comentarios:</strong> Opcional, máximo 300 caracteres.</li>
+                    <li><strong>Políticas de alquiler:</strong> Es obligatorio aceptarlas.</li>
+                </ul>
+            </div>
+
+            <form class="space-y-4">
+                <div>
+                    <label for="nombre" class="block font-semibold text-slate-700 mb-1">Nombre Completo *</label>
+                    <input type="text" id="nombre" minlength="3" placeholder="Ej. Carlos Pérez" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                </div>
+
+                <div>
+                    <label for="documento" class="block font-semibold text-slate-700 mb-1">Documento de Identidad *</label>
+                    <input type="text" id="documento" pattern="[0-9]{6,10}" placeholder="Ej. 1023456789" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                </div>
+
+                <div>
+                    <label for="correo" class="block font-semibold text-slate-700 mb-1">Correo Electrónico *</label>
+                    <input type="email" id="correo" placeholder="correo@ejemplo.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                </div>
+
+                <div>
+                    <label for="celular" class="block font-semibold text-slate-700 mb-1">Celular *</label>
+                    <input type="tel" id="celular" pattern="3[0-9]{9}" placeholder="3001234567" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                </div>
+
+                <div>
+                    <label for="fecha" class="block font-semibold text-slate-700 mb-1">Fecha del Alquiler *</label>
+                    <input type="date" id="fecha" min="2026-11-01" max="2026-12-31" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                </div>
+
+                <div>
+                    <label for="tipo_bici" class="block font-semibold text-slate-700 mb-1">Tipo de Bicicleta *</label>
+                    <select id="tipo_bici" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="urbana_clasica">Urbana Clásica ($10.000 / h)</option>
+                        <option value="urbana_plegable">Urbana Plegable ($12.000 / h)</option>
+                        <option value="montana_trail">Montaña Trail ($15.000 / h)</option>
+                        <option value="gravel">Gravel Aventura ($18.000 / h)</option>
+                        <option value="electrica">Eléctrica Urbana ($25.000 / h)</option>
+                        <option value="infantil">Infantil ($8.000 / h)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="plan" class="block font-semibold text-slate-700 mb-1">Plan / Duración *</label>
+                    <select id="plan" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                        <option value="">Seleccione el plan</option>
+                        <option value="1_hora">1 Hora</option>
+                        <option value="medio_dia">Medio Día (4 horas)</option>
+                        <option value="dia_completo">Día Completo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="cantidad" class="block font-semibold text-slate-700 mb-1">Cantidad de Bicicletas (1 a 6) *</label>
+                    <input type="number" id="cantidad" min="1" max="6" value="1" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition" required>
+                </div>
+
+                <div>
+                    <label for="comentarios" class="block font-semibold text-slate-700 mb-1">Comentarios (Opcional, máx. 300 caracteres)</label>
+                    <textarea id="comentarios" maxlength="300" rows="3" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                </div>
+
+                <div class="flex items-center gap-2 pt-2">
+                    <input type="checkbox" id="politicas" class="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 w-4 h-4" required>
+                    <label for="politicas" class="text-sm text-slate-700">Acepto las políticas de alquiler y seguridad *</label>
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-md mt-4">Confirmar y Enviar Reserva</button>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-auto text-center text-sm shadow-inner">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Rueda Libre. Todos los derechos reservados. Desarrollado con Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>

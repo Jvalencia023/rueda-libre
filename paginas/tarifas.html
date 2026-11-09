@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifas y Recorridos - Rueda Libre</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-xl font-bold flex items-center gap-2">
+                <span><img src="../img/logo.jpg" alt="Logo" class="inline-block h-8 w-8 object-cover rounded-full align-middle mr-1" /></span> Rueda<span class="text-emerald-400">Libre</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="../index.html" class="hover:text-emerald-400 transition">Inicio</a>
+                <a href="../paginas/tarifas.html" class="text-emerald-400 font-semibold">Tarifas y Recorridos</a>
+                <a href="../paginas/reservas.html" class="hover:text-emerald-400 transition">Reservas</a>
+                <a href="../nocturna/index.html" class="hover:text-emerald-400 transition">Ruta Nocturna</a>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full space-y-8">
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Tarifas de Alquiler por Tiempo</h2>
+            <p class="text-slate-600 mb-6">Escoge el tiempo que necesites para disfrutar de tu recorrido:</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-900 text-white">
+                            <th class="p-4 rounded-l-xl">Tipo de bicicleta</th>
+                            <th class="p-4">1 hora</th>
+                            <th class="p-4">Medio día (4 h)</th>
+                            <th class="p-4 rounded-r-xl">Día completo</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-semibold text-slate-900">Urbana</td>
+                            <td class="p-4 text-slate-600">$10.000</td>
+                            <td class="p-4 text-slate-600">$30.000</td>
+                            <td class="p-4 text-slate-600">$50.000</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-semibold text-slate-900">Montaña</td>
+                            <td class="p-4 text-slate-600">$15.000</td>
+                            <td class="p-4 text-slate-600">$45.000</td>
+                            <td class="p-4 text-slate-600">$70.000</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-semibold text-slate-900">Eléctrica</td>
+                            <td class="p-4 text-slate-600">$25.000</td>
+                            <td class="p-4 text-slate-600">$70.000</td>
+                            <td class="p-4 text-slate-600">$110.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Recorridos Guiados de Fin de Semana</h2>
+            <p class="text-slate-600 mb-6">Únete a nuestras rodadas grupales programadas:</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-900 text-white">
+                            <th class="p-4 rounded-l-xl">Recorrido</th>
+                            <th class="p-4">Distancia</th>
+                            <th class="p-4">Duración</th>
+                            <th class="p-4">Nivel</th>
+                            <th class="p-4 rounded-r-xl">Precio por persona</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-semibold text-slate-900">Río y Parques</td>
+                            <td class="p-4 text-slate-600">12 km</td>
+                            <td class="p-4 text-slate-600">2 h</td>
+                            <td class="p-4 text-slate-600">Fácil</td>
+                            <td class="p-4 text-slate-600">$45.000</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-semibold text-slate-900">Sabores de Barrio</td>
+                            <td class="p-4 text-slate-600">18 km</td>
+                            <td class="p-4 text-slate-600">3 h</td>
+                            <td class="p-4 text-slate-600">Medio</td>
+                            <td class="p-4 text-slate-600">$60.000</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-semibold text-slate-900">Reto Las Palmas</td>
+                            <td class="p-4 text-slate-600">25 km</td>
+                            <td class="p-4 text-slate-600">4 h</td>
+                            <td class="p-4 text-slate-600">Difícil</td>
+                            <td class="p-4 text-slate-600">$85.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-6 bg-slate-50 border border-slate-200 p-4 rounded-2xl text-slate-600 text-sm">
+                <p> <strong>Nota importante:</strong> Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a.m. <strong>Qué llevar:</strong> ropa cómoda, agua, protector solar y documento de identidad.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-auto text-center text-sm shadow-inner">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Rueda Libre. Todos los derechos reservados. Desarrollado con Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+================================================================================
+BITÁCORA DE DESARROLLO - RUEDA LIBRE v2.9 (TAILWIND CSS MIGRATION)
+================================================================================
+Autor / Desarrollador: José Ulises Valencia Martínez (Parche Dev)
+Fecha de Actualización: Noviembre de 2026
+--------------------------------------------------------------------------------
+[REGISTRO DE CAMBIOS Y ACTIVIDADES]
+- Migración completa a Tailwind CSS (Play CDN) en todo el sitio web principal 
+  y en la sección de Ruta Nocturna.
+- Rediseño estético ultrarresponsivo y moderno usando clases utilitarias de Tailwind 
+  (flexbox, grid, transiciones, sombras y componentes estéticos avanzados).
+- Inclusión de la flota en cuadrícula (6 modelos de bicicletas), tablas de tarifas 
+  y recorridos, y formulario de reservas con reglas de negocio validadas.
+- Construcción de nocturna/componentes.html con tres variantes de botones, una card
+  de rodada, alertas informativa/de éxito/de advertencia y campos accesibles de
+  correo y celular. El aviso de éxito usa role="status", aria-live="polite" y
+  aria-atomic="true" para anunciarse a lectores de pantalla.
+- Reglas del kit de componentes: radio uniforme de 1rem (rounded-2xl); escala
+  Tailwind de 4px por paso, usando múltiplos de 4px para relleno, separación y
+  márgenes; base slate para texto y bordes, emerald para acciones y marca, y tonos
+  sky/emerald/amber para diferenciar alertas informativas, de éxito y advertencia.
+  Los campos y botones conservan borde visible y foco resaltado.
+================================================================================
